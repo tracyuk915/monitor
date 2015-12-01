@@ -1,0 +1,37 @@
+<script type="text/html" id="cell-template">
+    <div class="col-md-3">
+        <div class="panel panel-default cell">
+            <div class="panel-heading">
+                <span data-content="name"></span>
+                <input type="checkbox" class="input-control pull-right">
+            </div>
+            <div class="panel-body">
+                <div class="bs-callout bs-callout-info" id="callout-glyphicons-location">
+                    <div class="jobs-container" data-id="id">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="job-template">
+    <div>
+        <a data-href="job_url" data-content="job_name" style="display: inline-block;" target="_BLANK"></a>&nbsp;<span data-content="job_status"></span>
+    </div>
+</script>
+
+<script type="text/html" id="add-action-template">
+    <div class="col-md-3">
+        <div class="panel panel-default add-cell cell">
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="product-line-template">
+    <option data-value="productLine" data-content="productLine"></option>
+</script>
+
+<script type="text/html" id="product-template">
+    <input name="product" type="checkbox" data-value="product" data-content="product">&nbsp;<span data-content="product"></span>
+</script>

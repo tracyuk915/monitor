@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AutomationMonitor</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <!--<meta http-equiv="refresh" content="30"> -->
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <div class="form-group form-group-lg">
+        <input type="text" class="form-control" placeholder="Search for...">
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group form-group-lg">
+        <img src="<%=@current_user[:avatar_url] %>" style="width: 32px; height: 32px;"> &nbsp; <%= @current_user[:name] %> | <a href="/auth/logout">Logout</a>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="cell-container"></div>
+</div>
+
+<%= yield %>
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted"><b>Current Time: </b><%=Time.now.in_time_zone("Beijing").strftime("%Y %m %d %H:%M:%S %z") %></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+// Place all the styles related to the AutomationSetController controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.add-cell{
+  background-image: url('bigadd.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  cursor: pointer;
+  height: 300px;
+}
+
+.cell{
+  height: 300px;
+}
